@@ -1,5 +1,6 @@
 import FercCalcs
 import weather as w
+import json
 
 lat = '30.27' 
 lon = '-97.74'
@@ -12,3 +13,4 @@ print (conditions)
 conditions = w.getNewWeather( lat, lon )
 
 print (conditions)
+

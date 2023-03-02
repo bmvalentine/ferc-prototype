@@ -1,4 +1,5 @@
 import requests 
+import os
 
 def getNewWeather ( lat, lon ) :
 
@@ -6,8 +7,12 @@ def getNewWeather ( lat, lon ) :
 
     querystring = {"q":"Austin","dt":"2023-02-26","lang":"en"}
 
+    # Get the Rapid API KEY
+    x_rapidapi_key = os.getenv('X_RAPIDAPI_KEY')
+    print(f"The API Key is: {x_rapidapi_key}")
+
     headers = {
-        "X-RapidAPI-Key": "32c38eab7fmsh449308994ef5d9ep15e6bcjsn68f4becec7b6",
+        "X-RapidAPI-Key": str(x_rapidapi_key),
         "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com"
     }
 
