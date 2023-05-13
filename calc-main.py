@@ -12,5 +12,21 @@ print (conditions)
 
 conditions = w.getNewWeather( lat, lon )
 
-print (conditions)
+print(conditions)
+# print (conditions)
+
+# json_obj = json.loads(conditions)
+
+# location = json_obj["location"]
+# forecast = json_obj["forecast"]
+
+# forecast_json = json.loads( forecast )
+#for f in  forecast_json["forecastday"] :
+#    print( f )
+#    print( f"Forecast: {f}")
+
+# forecastday = json_obj["forecastday"]
+
+# print( json_obj )
+# print( forecast )
 
